@@ -1,4 +1,4 @@
-# DIAMOND PRICE PREDICTION
+# Crop Selection
 Crop Selection is an application to select the Crop that can be grown in the soil with the Soil Properties
 
 
