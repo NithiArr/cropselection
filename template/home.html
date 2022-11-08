@@ -2,24 +2,78 @@
 
 <div class="container">
 
-    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <form class="well form-horizontal" action="{% url 'predict' %}" method="post"  id="contact_form">
+    {%csrf_token%} 
 <fieldset>
 
 <!-- Form Name -->
-<legend>Contact Us Today!</legend>
+<legend>Give us the soil propotion and we say what is best to cultivate...!!!!</legend>
 
 <!-- Text input-->
 
 <div class="form-group">
-  <label class="col-md-4 control-label">First Name</label>  
+  <label class="col-md-4 control-label">Nitrogen</label>  
   <div class="col-md-4 inputGroupContainer">
   <div class="input-group">
   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+  <input  name="n" placeholder="Nitrogen" class="form-control"  type="number">
     </div>
   </div>
 </div>
-
+<div class="form-group">
+  <label class="col-md-4 control-label">Phoshporus </label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="p" placeholder="Phoshporus" class="form-control"  type="number">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Potassium</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="k" placeholder="Potassium" class="form-control"  type="number">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Temparture</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="temp" placeholder="Temparture" class="form-control"  type="number">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Humidity</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="humi" placeholder="Humidity" class="form-control"  type="number">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">ph</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="ph" placeholder="5.5-6.5" class="form-control"  type="number">
+    </div>
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label">Rainfall</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="rain" placeholder="Rainfall" class="form-control"  type="number">
+    </div>
+  </div>
+</div>
 <!-- Text input-->
 
 <!-- Success message -->
@@ -29,7 +83,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label"></label>
   <div class="col-md-4">
-    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+    <button type="submit" class="btn btn-warning" >Submit<span class="glyphicon glyphicon-send"></span></button>
   </div>
 </div>
 
