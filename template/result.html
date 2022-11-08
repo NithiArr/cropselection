@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crop Selection</title>
 </head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <style>
     .bg{
       background-repeat: no-repeat;
@@ -67,6 +68,14 @@
         </tr>
         
     </table>
+    <form action="{% url 'home' %}">
+    <div class="form-group">
+        <label class="col-md-4 control-label"></label>
+        <div class="col-md-4">
+          <button type="submit" class="btn btn-warning" >Go Back<span class="glyphicon glyphicon-send"></span></button>
+        </div>
+      </div>
+    </form>
 </center>
 </body>
 </html>

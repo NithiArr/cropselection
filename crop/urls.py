@@ -19,7 +19,7 @@ from home.views import home,predict
 
 
 urlpatterns = [
-    path('',home),
+    path('',home,name='home'),
     path('predict/',predict,name='predict'),
     path('admin/', admin.site.urls),
 ]
