@@ -7,8 +7,6 @@ def home(request):
 
 def predict(request):
     if request.method == 'POST':
-        import numpy as np
-        import pandas as pd
         n=float(request.POST.get('n'))
         p=float(request.POST.get('p'))
         k=float(request.POST.get('k'))
@@ -18,4 +16,5 @@ def predict(request):
         rain=float(request.POST.get('rain'))
         random = pickle.load(open('random_forest.sav','rb'))
         result = random.predict([[n,p,k,temp,humi,ph,rain]])
-        return render(request,'result.html',{'crr':result})
+        crop=result[0]
+        return render(request,'result.html',{'crr':crop})
