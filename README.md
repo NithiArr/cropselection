@@ -16,6 +16,9 @@ Thanks to KAGGLE.. you can find dataset here.. [DATASET](https://www.kaggle.com/
 
 
 
+# DATA CATEGORY'S
+- Qualitative Features (Categorical) : Cut, Color, Clarity.
+- Quantitative Features (Numerical) : Carat, Depth , Table , Price.
 
 
 # Installation
@@ -34,13 +37,13 @@ python manage.py runserver
 ```
 
 # Important Tools used
-- python 3.8
+- python 3.10
 - visual studio code
 - backend api: Django
-- frontend : HTML,CSS & JAVASCRIPT
+- frontend : HTML,CSS & BOOTSTRAP
 
 # MODEL USED
-Random Forest Regressor
+Random Forest Classifier
 
 # Accuracy
 The accuaracy of model is 99
