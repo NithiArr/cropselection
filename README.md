@@ -27,8 +27,7 @@ one can install required packages for this application using
 pip install -r requirements
 ```
 
-# Separate environment
-Alwas create a separate __conda environment/any environment__ so that you can avoid version errors between packages
+
 
 # Usage
 After installing the required packages use the following command to start the flask app
@@ -38,6 +37,8 @@ python manage.py runserver
 
 # Important Tools used
 - python 3.10
+- pandas
+- sci-kit learn
 - visual studio code
 - backend api: Django
 - frontend : HTML,CSS & BOOTSTRAP
