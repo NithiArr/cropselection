@@ -5,7 +5,7 @@ Crop Selection is an application to select the Crop that can be grown in the soi
 # CREATED BY
 [NITHISH G](https://www.linkedin.com/in/nithish-g/)
 
-[THEERAJ SUBHAKAAR A S](https://www.linkedin.com/in/theeraj-subhakaar-60362b240/)
+
 
 # DATASET
 Thanks to KAGGLE.. you can find dataset here.. [DATASET](https://www.kaggle.com/datasets/78c7595cbf5a98a8cc488e5b9f6911f216680e5a221e6704ba7be4d7ef42c753?resource=download)
